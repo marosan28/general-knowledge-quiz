@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+* {
+    font-family: 'Itim', sans-serif;
+}
 body {
    height: 100vh;
     background-image: linear-gradient(#FF66D8, #F7EC59);
@@ -19,11 +22,17 @@ body {
                         "que1 que2"
                         "que3 que4";
 }
+
 .btn {
     align-items: center;
     height: 100px;
     width: 300px;
     margin: 0 auto;
+    background-color: #92DCE5;
+    border-radius: 30px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
 }
 .btn1 {
     grid-area: que1;
@@ -36,4 +45,13 @@ body {
 }
 .btn4 {
     grid-area: que4;
+}
+
+.btn:hover {
+    height: 98px;
+    width: 298px;
+}
+p {
+    position: absolute;
+    width: 300px;
 }
