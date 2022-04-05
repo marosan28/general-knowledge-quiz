@@ -1,0 +1,39 @@
+
+body {
+   height: 100vh;
+    background-image: linear-gradient(#FF66D8, #F7EC59);
+    background-repeat: no-repeat;
+}
+.question-container {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid rgba(110, 110, 110, 0.74);
+    height: 500px;
+    width: 800px;
+    display: flex;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: auto 110px 110px;
+    grid-template-areas:"que que"
+                        "que1 que2"
+                        "que3 que4";
+}
+.btn {
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    margin: 0 auto;
+}
+.btn1 {
+    grid-area: que1;
+}
+.btn2 {
+    grid-area: que2;
+}
+.btn3 {
+    grid-area: que3;
+}
+.btn4 {
+    grid-area: que4;
+}
