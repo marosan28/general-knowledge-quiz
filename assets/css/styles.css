@@ -7,11 +7,26 @@
     font-family: 'Itim', sans-serif;
     
 }
+html {
+    height: 100%;
+    min-width: 100%;
+}
 body {
     height: 100%;
     background-image: linear-gradient(#FF66D8, #F7EC59);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: inherit;
+}
+.title {
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px;
+    font-size: 3rem;
+}
+.title:hover {
+    font-size: 2.8rem;
 }
 .question-container {
     background-color: white;
@@ -29,7 +44,7 @@ body {
         "que3 que4";
 }
 
-.btn, .start-btn {
+.btn {
     height: 150px;
     width: 300px;
     margin: 20px auto;
@@ -70,5 +85,33 @@ body {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 25%;
+    top: 40%;
+    display: inline;
+    
+}
+.next-btn {
+    display: none;
+}
+/* Styling for small screen sizes */
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 2rem;
+    }
+    .question-container {
+        width: 280px;
+    }
+    .btn {
+        height: 100px;
+        width: 200px;
+    }
+    .start-btn {
+        top: 45%;
+    }
+    .btn:hover {
+        height: 90px;
+        width: 190px;
+    }
+    .title:hover {
+        font-size: 1.9rem;
+    }
 }
