@@ -9,6 +9,6 @@ Website's main goal is entertaining the user and encouraging the user to play. T
 ## Main Features
 - __Front Page__
 
-  - The front page consists of a title and a button where a user can click if he wants to start the game.
-  - The button changes size when a user hovers over and the cursor changes to pointer, indicating it should be clicked.
+  - The front page consists of a title and a button where the user can click if he wants to start the game.
+  - The button changes size when the user hovers over and the cursor changes to pointer, indicating it should be clicked.
 
