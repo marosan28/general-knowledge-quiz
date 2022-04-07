@@ -1,38 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 * {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
     font-family: 'Itim', sans-serif;
+    
 }
 body {
-   height: 100vh;
+    height: 100%;
     background-image: linear-gradient(#FF66D8, #F7EC59);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .question-container {
     background-color: white;
     border-radius: 10px;
     border: 2px solid rgba(110, 110, 110, 0.74);
-    height: 500px;
+    height: 600px;
     width: 800px;
-    display: flex;
-    margin: 100px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2,auto);
-    grid-template-rows: auto 110px 110px;
-    grid-template-areas:"que que"
-                        "que1 que2"
-                        "que3 que4";
+    grid-template-rows: auto repeat(2,180px);
+    grid-template-areas:
+        "que que"
+        "que1 que2"
+        "que3 que4";
 }
 
-.btn {
-    align-items: center;
-    height: 100px;
+.btn, .start-btn {
+    height: 150px;
     width: 300px;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: #92DCE5;
     border-radius: 30px;
     color: white;
     font-size: 2rem;
     cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 .btn1 {
     grid-area: que1;
@@ -48,10 +58,17 @@ body {
 }
 
 .btn:hover {
-    height: 98px;
+    height: 145px;
     width: 298px;
 }
-p {
+.btn {
+    display: none;
+}
+.start-btn {
     position: absolute;
-    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 25%;
 }
