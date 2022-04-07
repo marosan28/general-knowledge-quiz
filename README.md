@@ -12,3 +12,24 @@ Website's main goal is entertaining the user and encouraging the user to play. T
   - The front page consists of a title and a button where the user can click if he wants to start the game.
   - The button changes size when the user hovers over and the cursor changes to pointer, indicating it should be clicked.
 
+ ## First Time Visitor Goals
+-   ### User stories
+
+    -   #### First Time Visitor Goals
+
+        1. As a First Time Visitor, I want to easily understand the main 
+        purpose of the site.
+
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the website layout.
+
+        3. As a First Time Visitor, I want to be able to understand the questions and how to respond. 
+
+    -   #### Returning Visitor Goals
+
+        1. As a Returning Visitor, I want to be able to play and get questions in a different order.
+        2. As a Returning Visitor, I want to see my result bar while playing.
+        
+
+    -   #### Frequent User Goals
+        1. As a Frequent User, I want to have my username saved.
+        2. As a Frequent User, I want to find and compare my high-score

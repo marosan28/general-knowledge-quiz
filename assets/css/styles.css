@@ -42,6 +42,7 @@ body {
     align-items: center;
     padding: 20px 0;
 }
+/* Start text */
 .start-text {
     color:#fff;
     border: 2px solid rgba(110, 110, 110, 0.74);
@@ -49,7 +50,7 @@ body {
     padding: 15px;
     background-image: linear-gradient(#FF66D8, #F7EC59);
     position: absolute;
-    display: none;
+    display: inline;
 }
 /* Button Styling */
 .btn {
@@ -63,11 +64,11 @@ body {
     cursor: pointer;
     display: none;
 }
-
 .btn:hover {
     height: 145px;
     width: 298px;
 }
+/* Control buttons */
 .start-btn {
     position: absolute;
     display: inline;
