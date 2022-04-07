@@ -24,6 +24,7 @@ body {
     text-align: center;
     margin: 20px;
     font-size: 3rem;
+    padding: 10px;
 }
 .title:hover {
     font-size: 2.8rem;
@@ -37,9 +38,10 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: end;
     justify-content: space-around;
     align-items: center;
+    padding: 20px 0;
 }
 
 .btn {
@@ -76,16 +78,14 @@ body {
         font-size: 2rem;
     }
     .question-container {
-        width: 80%;
         margin: 0 auto;
+        height: inherit;
     }
     .btn {
-        height: 100px;
-        width: 200px;
+        margin: 10px;
     }
     .start-btn {
         top: 45%;
-        display: inline;
     }
     .btn:hover {
         height: 90px;
@@ -105,5 +105,16 @@ body {
     .btn {
         margin: 0 50px 15px;
     }
-}
+    .question-container {
+        height: inherit;
+    }
 
+}
+@media screen and (min-width: 500px) and (max-width:900px) {
+    .title {
+        font-size: 2.55rem;
+    }
+    .title:hover {
+        font-size: 2.2rem;
+    }
+}
