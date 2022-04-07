@@ -38,7 +38,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: end;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 20px 0;
 }
@@ -48,14 +48,14 @@ body {
     border-radius: 20px;
     padding: 15px;
     background-image: linear-gradient(#FF66D8, #F7EC59);
-    position: relative;
-    top: -200px;
+    position: absolute;
+    display: none;
 }
 /* Button Styling */
 .btn {
     height: 150px;
     width: 300px;
-    margin: 0;
+    margin: 20px;
     background-color: #92DCE5;
     border-radius: 30px;
     color: white;
@@ -69,11 +69,11 @@ body {
     width: 298px;
 }
 .start-btn {
- position: relative;
- display: inline;
+    position: absolute;
+    display: inline;
 }
 .next-btn {
-   display: inline;
+   display:inline;
 }
 
 /* Styling for different screen sizes */
@@ -87,9 +87,7 @@ body {
     }
     .btn {
         margin: 10px;
-    }
-    .start-btn {
-        top: 45%;
+        width: 200px;
     }
     .btn:hover {
         height: 90px;
@@ -101,12 +99,15 @@ body {
 }
 @media screen and (min-width: 1500px) and (max-width:1670px) {
     .btn {
-        margin: 10px 0;
+        margin: 10px 2px;
     }
 }
 @media screen and (min-width: 500px) and (max-width:1500px) {
     .btn {
         margin: 0 50px 15px;
+    }
+    .start-btn, .next-btn{
+        margin: 15px 0;
     }
     .question-container {
         height: inherit;
