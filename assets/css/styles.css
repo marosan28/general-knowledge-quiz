@@ -30,54 +30,32 @@ body {
 }
 .question-container {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 50px;
     border: 2px solid rgba(110, 110, 110, 0.74);
     height: 600px;
     width: 80%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    grid-template-rows: auto repeat(2,180px);
-    grid-template-areas:
-        "que que"
-        "que1 que2"
-        "que3 que4";
-}
-
-.btn {
-    height: 150px;
-    width: 300px;
-    margin: 20px auto;
-    background-color: #92DCE5;
-    border-radius: 30px;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
     align-items: center;
 }
-.btn1 {
-    grid-area: que1;
-}
-.btn2 {
-    grid-area: que2;
-}
-.btn3 {
-    grid-area: que3;
-}
-.btn4 {
-    grid-area: que4;
+
+.btn {
+    height: 150px;
+    width: 300px;
+    margin: 0;
+    background-color: #92DCE5;
+    border-radius: 30px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .btn:hover {
     height: 145px;
     width: 298px;
-}
-.btn {
-    display: none;
 }
 .start-btn {
     position: absolute;
@@ -86,7 +64,7 @@ body {
     left: 0;
     right: 0;
     top: 40%;
-    display: inline;
+    display: none;
     
 }
 .next-btn {
@@ -118,3 +96,14 @@ body {
     }
 
 }
+@media screen and (min-width: 1500px) and (max-width:1670px) {
+    .btn {
+        margin: 10px 0;
+    }
+}
+@media screen and (min-width: 500px) and (max-width:1500px) {
+    .btn {
+        margin: 0 50px 15px;
+    }
+}
+
