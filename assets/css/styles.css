@@ -4,8 +4,7 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
-    font-family: 'Itim', sans-serif;
-    
+   font-family: 'Itim', sans-serif; 
 }
 html {
     height: 100%;
@@ -43,7 +42,16 @@ body {
     align-items: center;
     padding: 20px 0;
 }
-
+.start-text {
+    color:#fff;
+    border: 2px solid rgba(110, 110, 110, 0.74);
+    border-radius: 20px;
+    padding: 15px;
+    background-image: linear-gradient(#FF66D8, #F7EC59);
+    position: relative;
+    top: -200px;
+}
+/* Button Styling */
 .btn {
     height: 150px;
     width: 300px;
@@ -53,6 +61,7 @@ body {
     color: white;
     font-size: 2rem;
     cursor: pointer;
+    display: none;
 }
 
 .btn:hover {
@@ -60,19 +69,14 @@ body {
     width: 298px;
 }
 .start-btn {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 40%;
-    display: none;
-    
+ position: relative;
+ display: inline;
 }
 .next-btn {
-    display: none;
+   display: inline;
 }
-/* Styling for small screen sizes */
+
+/* Styling for different screen sizes */
 @media screen and (max-width: 500px) {
     .title {
         font-size: 2rem;
@@ -94,7 +98,6 @@ body {
     .title:hover {
         font-size: 1.9rem;
     }
-
 }
 @media screen and (min-width: 1500px) and (max-width:1670px) {
     .btn {
@@ -108,7 +111,6 @@ body {
     .question-container {
         height: inherit;
     }
-
 }
 @media screen and (min-width: 500px) and (max-width:900px) {
     .title {
