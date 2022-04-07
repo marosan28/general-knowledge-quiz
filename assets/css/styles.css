@@ -33,7 +33,7 @@ body {
     border-radius: 10px;
     border: 2px solid rgba(110, 110, 110, 0.74);
     height: 600px;
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2,auto);
@@ -98,7 +98,8 @@ body {
         font-size: 2rem;
     }
     .question-container {
-        width: 280px;
+        width: 80%;
+        margin: 0 auto;
     }
     .btn {
         height: 100px;
@@ -106,6 +107,7 @@ body {
     }
     .start-btn {
         top: 45%;
+        display: inline;
     }
     .btn:hover {
         height: 90px;
@@ -114,4 +116,5 @@ body {
     .title:hover {
         font-size: 1.9rem;
     }
+
 }
