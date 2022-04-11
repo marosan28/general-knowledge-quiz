@@ -57,7 +57,7 @@ body {
     padding: 15px;
     background-image: linear-gradient(#FF66D8, #F7EC59);
     position: absolute;
-    display: none;
+    display: inline;
 }
 
 /* Button Styling */
@@ -70,7 +70,7 @@ body {
     color: white;
     font-size: 2rem;
     cursor: pointer;
-    display: none;
+    display: inline;
     transition: ease-in-out 0.3s;
 }
 
@@ -80,15 +80,15 @@ body {
 
 /* Control buttons */
 .start-btn {
-    display: none;
+    display: inline;
 }
 
 .next-btn {
-    display: none;
+    display: inline;
 }
 
 .reset-btn {
-    display: none;
+    display: inline;
 }
 
 /* Question and answers */

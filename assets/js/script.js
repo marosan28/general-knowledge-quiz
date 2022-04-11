@@ -91,4 +91,7 @@ const questions = [
       ]
     },
   ]
+  startBtn.addEventListener('click', () => {
+    startBtnClick();
+  })
   
