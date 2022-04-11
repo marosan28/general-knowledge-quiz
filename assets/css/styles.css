@@ -80,14 +80,15 @@ body {
 
 /* Control buttons */
 .start-btn {
-    position: absolute;
     display: none;
 }
 
 .next-btn {
     display: none;
 }
-
+.reset-btn {
+    display: none;
+}
 /* Question and answers */
 .question-answers {
     display: flex;
@@ -181,12 +182,8 @@ body {
     }
 
     .start-btn,
-    .next-btn {
+    .next-btn, .reset-btn {
         margin: 15px 0;
-    }
-
-    .question-container {
-        height: inherit;
     }
 }
 
