@@ -13,11 +13,25 @@
     <div class="high-score"></div>
     <!--Question container with buttons-->
     <div class="question-container">
-        <h1 class="start-text title">Are you ready?</h1>
-       <button class="btn btn1">Answer 1</button>
-       <button class="btn btn2">Answer 2</button>
-       <button class="btn btn3">Answer 3</button>
-       <button class="btn btn4">Answer 4</button>
+        <h1 class="start-text title" id="startText">Are you ready?</h1>
+        <input type="text" class="start-text title toggle" id="usernameInput" placeholder="Username">
+        <div class="question-answer toggle" id="questionAnswers">
+            <h1 class="question" id="question">Question?</h1>
+            <div class="answers">
+                <div class="answers-btn" id="answer1">
+                    <h1 class="answers-btnText">Answer 1</h1>
+                </div>
+                <div class="answers-btn" id="answer2"> 
+                    <h1 class="answers-btnText">Answer 2</h1>
+                </div>
+                <div class="answers-btn" id="answer3">
+                    <h1 class="answers-btnText">Answer 3</h1>
+                </div>
+                <div class="answers-btn" id="answer4">
+                    <h1 class="answers-btnText">Answer 4</h1>
+                </div>
+            </div>
+        </div>
          <!--Control buttons-->
     <div class="controls">
         <button class="start-btn btn">Start</button>
