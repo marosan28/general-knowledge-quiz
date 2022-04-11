@@ -141,3 +141,18 @@ const startBtnClick = () => {
       }
     }
   }
+  const startQuiz = () => {
+    if(inputValue != undefined) { 
+      nextUsername.classList.toggle('toggle')
+      nextQuestion.classList.toggle('toggle'); 
+      saveUsername(); 
+      usernameInput.classList.toggle('toggle');
+      usernameScore.classList.toggle('toggle'); 
+      usernameDisplay.innerHTML = username; 
+      scoreDisplay.innerHTML = score; 
+      questionAnswers.classList.toggle('toggle'); 
+    } 
+    else{
+      alert('Username is required'); 
+    }
+  }
