@@ -63,10 +63,10 @@ body {
     font-size: 2rem;
     cursor: pointer;
     display: none;
+    transition: ease-in-out 0.3s;
 }
 .btn:hover {
-    height: 145px;
-    width: 298px;
+    transform: scale(1.1);
 }
 /* Control buttons */
 .start-btn {
@@ -82,7 +82,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 .question {
     font-size: 25px;
     margin-bottom: 30px;
@@ -94,6 +93,19 @@ body {
     align-items: center;
     gap: 30px;
     margin-bottom: 30px;
+}
+.answers-btn {
+    background-color: #92DCE5;
+    border-radius: 30px;
+    padding: 15px 30px; 
+    transition: ease-in-out 0.3s;
+}
+.answers-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.answers-btnText {
+    color: white;
 }
 
 /* Styling for different screen sizes */
