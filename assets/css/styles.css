@@ -85,7 +85,7 @@ body {
 }
 
 .next-btn {
-    display: inline;
+    display: none;
 }
 
 /* Question and answers */
@@ -156,7 +156,6 @@ body {
 
     .question-container {
         margin: 0 auto;
-        height: inherit;
     }
 
     .btn {
@@ -167,10 +166,6 @@ body {
     .btn:hover {
         height: 90px;
         width: 190px;
-    }
-
-    .title:hover {
-        font-size: 1.9rem;
     }
 }
 
