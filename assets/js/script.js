@@ -159,4 +159,13 @@ const startBtnClick = () => {
   const saveUsername = () => {
     username = usernameInput.value;
   }
-  
+  const selection = (ans) => {
+    selected = ans.value;
+    if(document.querySelector('.clicked') == null){
+      ans.classList.add('clicked');   
+    }
+    else if(document.querySelector('.clicked') != null){
+      document.querySelector('.clicked').classList.remove('clicked'); 
+      ans.classList.add('clicked');   
+    }
+  }
