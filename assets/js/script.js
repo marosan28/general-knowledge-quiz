@@ -189,4 +189,22 @@ const startBtnClick = () => {
     ans2.value = questions[id].answers[1].isCorrect;
     ans3.value = questions[id].answers[2].isCorrect;
     ans4.value = questions[id].answers[3].isCorrect;
+
+    ans1.addEventListener("click", () => {
+        selection(ans1);
+    })
+
+    ans2.addEventListener("click", () => {
+      selection(ans2);
+    })
   
+    ans3.addEventListener("click", () => {
+      selection(ans3);
+    })
+  
+
+    ans4.addEventListener("click", () => {
+      selection(ans4);
+    })
+  }
+ 
