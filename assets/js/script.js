@@ -106,7 +106,92 @@ const questions = [
           text: 'Brahms', isCorrect: false,
           },
         ]
-      }
+      },
+      {
+        question: 'Which German word means lightning war used in WW2?',
+        answers: [
+          {
+          text: 'Tiere', isCorrect: false,
+          },
+          {
+          text: 'Kartofeln', isCorrect: false,
+          },
+          {
+          text: 'Sehenswürdigkeiten', isCorrect: false,
+          },
+          {
+          text: 'Blitzkrieg', isCorrect: true,
+          },
+        ]
+      },
+      {
+        question: 'Where in France do claret wines come from?',
+        answers: [
+          {
+          text: 'Paris', isCorrect: false,
+          },
+          {
+          text: 'Bordeaux', isCorrect: true,
+          },
+          {
+          text: 'Marseille', isCorrect: false,
+          },
+          {
+          text: 'Toulouse', isCorrect: false,
+          },
+        ]
+      },
+      {
+        question: 'What is the capital of Sicily?',
+        answers: [
+          {
+          text: 'Syracuse', isCorrect: false,
+          },
+          {
+          text: 'Catania', isCorrect: false,
+          },
+          {
+          text: 'Palermo', isCorrect: true,
+          },
+          {
+          text: 'Messina', isCorrect: false,
+          },
+        ]
+      },
+      {
+        question: 'What links Brazil, Uruguay, Mozambique and Angola ?',
+        answers: [
+          {
+          text: 'Colonies of Portugal', isCorrect: true,
+          },
+          {
+          text: 'A River', isCorrect: false,
+          },
+          {
+          text: 'Language', isCorrect: false,
+          },
+          {
+          text: 'Flag color', isCorrect: false,
+          },
+        ]
+      },
+      {
+        question: 'If you suffer from epistaxis what is wrong?',
+        answers: [
+          {
+          text: 'Broken rib', isCorrect: false,
+          },
+          {
+          text: 'A nosebleed', isCorrect: true,
+          },
+          {
+          text: 'Iron deficiency', isCorrect: false,
+          },
+          {
+          text: 'Concussion', isCorrect: false,
+          },
+        ]
+      },
     ];
 
   startBtn.addEventListener('click', () => {
@@ -156,7 +241,7 @@ const startBtnClick = () => {
       else {
         alert("Unfortunately that's incorrect.");
       }
-      if (id < 5) { 
+      if (id < 10) { 
         iterate(id);
       }else {
         endQuiz();
