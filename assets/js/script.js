@@ -9,3 +9,8 @@ const usernameDisplay = document.getElementById('usernameDisplay');
 const scoreDisplay = document.getElementById('scoreDisplay');
 const endUsername = document.getElementById('usernameEnd');
 const endScore = document.getElementById('scoreEnd');
+// Sections
+const usernameInput = document.getElementById('usernameInput');
+const usernameScore = document.getElementById('usernameScore');
+const questionAnswers = document.getElementById('questionAnswers');
+const endScreen = document.getElementById('endScreen');
