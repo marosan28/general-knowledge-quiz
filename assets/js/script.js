@@ -169,3 +169,14 @@ const startBtnClick = () => {
       ans.classList.add('clicked');   
     }
   }
+  function iterate(id) {
+
+    const question = document.getElementById("question");
+  
+    question.innerHTML = questions[id].question;
+  
+    const ans1 = document.getElementById('answer1');
+    const ans2 = document.getElementById('answer2');
+    const ans3 = document.getElementById('answer3');
+    const ans4 = document.getElementById('answer4');
+    
