@@ -156,3 +156,7 @@ const startBtnClick = () => {
       alert('Username is required'); 
     }
   }
+  const saveUsername = () => {
+    username = usernameInput.value;
+  }
+  
