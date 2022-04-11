@@ -219,3 +219,11 @@ body {
         font-size: 2.2rem;
     }
 }
+/* JS CLASSES */
+.toggle {
+    display: none;
+}
+
+.clicked {
+    background-color: mediumaquamarine;
+}

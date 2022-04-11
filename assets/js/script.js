@@ -91,6 +91,7 @@ const questions = [
       ]
     },
   ]
+
   startBtn.addEventListener('click', () => {
     startBtnClick();
   })
@@ -109,3 +110,34 @@ const questions = [
   resetBtn.addEventListener('click', () => {
     window.location.reload();
   })
+
+// Functions
+const startBtnClick = () => {
+    startBtn.classList.toggle('toggle');
+    startText.classList.toggle('toggle');
+    nextUsername.classList.toggle('toggle');
+    usernameInput.classList.toggle('toggle');
+  }
+
+  const usernameInp = () => {
+  }
+  const nextBtnClicked = () => {
+    if(document.querySelector('.clicked') != null) { 
+      start = false; 
+      id++;
+      document.querySelector('.clicked').classList.remove('clicked');
+      if(selected == true) { 
+        score++; 
+        scoreDisplay.innerHTML = score; 
+        alert("That's the correct answer, congrats!")
+      }
+      else {
+        alert("Unfortunately that's incorrect.");
+      }
+      if (id < 4) { 
+        iterate(id);
+      }else {
+        endQuiz();
+      }
+    }
+  }
