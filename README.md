@@ -26,7 +26,7 @@ Website's main goal is entertaining the user and encouraging the user to play. T
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to be able to play and get questions in a different order.
+        1. As a Returning Visitor, I want to be able to play with different usernames.
         2. As a Returning Visitor, I want to see my result bar while playing.
         
 
