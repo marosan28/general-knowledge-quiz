@@ -179,4 +179,14 @@ const startBtnClick = () => {
     const ans2 = document.getElementById('answer2');
     const ans3 = document.getElementById('answer3');
     const ans4 = document.getElementById('answer4');
-    
+
+    ans1.innerHTML = questions[id].answers[0].text;
+    ans2.innerHTML = questions[id].answers[1].text;
+    ans3.innerHTML = questions[id].answers[2].text;
+    ans4.innerHTML = questions[id].answers[3].text;
+
+    ans1.value = questions[id].answers[0].isCorrect;
+    ans2.value = questions[id].answers[1].isCorrect;
+    ans3.value = questions[id].answers[2].isCorrect;
+    ans4.value = questions[id].answers[3].isCorrect;
+  
