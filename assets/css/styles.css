@@ -50,7 +50,7 @@ body {
     padding: 15px;
     background-image: linear-gradient(#FF66D8, #F7EC59);
     position: absolute;
-    display: inline;
+    display: none;
 }
 /* Button Styling */
 .btn {
