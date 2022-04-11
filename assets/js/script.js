@@ -23,74 +23,91 @@ let inputValue;
 // Questions object
 const questions = [
     {
-      question: 'Question one',
+      question: 'Where in your body is your patella?',
       answers: [
         {
-        text: 'Answer 1', isCorrect: true,
+        text: 'Knee', isCorrect: true,
         },
         {
-        text: 'Answer 2', isCorrect: false,
+        text: 'Shoulders', isCorrect: false,
         },
         {
-        text: 'Answer 3', isCorrect: false,
+        text: 'Neck', isCorrect: false,
         },
         {
-        text: 'Answer 4', isCorrect: false,
+        text: 'Arms', isCorrect: false,
         },
       ]
     },
     {
-      question: 'Question two',
+      question: 'If you had pogonophobia what would you be afraid of?',
       answers: [
         {
-        text: 'Answer 1', isCorrect: false,
+        text: 'Dolly Parton', isCorrect: false,
         },
         {
-        text: 'Answer 2', isCorrect: true,
+        text: 'Beards', isCorrect: true,
         },
         {
-        text: 'Answer 3', isCorrect: false,
+        text: 'Spoons', isCorrect: false,
         },
         {
-        text: 'Answer 4', isCorrect: false,
+        text: 'Height', isCorrect: false,
         },
       ]
     },
     {
-      question: 'Question three',
+      question: 'What is a Winston Churchill?',
       answers: [
         {
-        text: 'Answer 1', isCorrect: false,
+        text: 'Cigar', isCorrect: true,
         },
         {
-        text: 'Answer 2', isCorrect: false,
+        text: 'Ant', isCorrect: false,
         },
         {
-        text: 'Answer 3', isCorrect: true,
+        text: 'Flower', isCorrect: false,
         },
         {
-        text: 'Answer 4', isCorrect: false,
+        text: 'Shoe', isCorrect: false,
         },
       ]
     },
     {
-      question: 'Question four',
+      question: 'La Giaconda is better known as what?',
       answers: [
         {
-        text: 'Answer 1', isCorrect: false,
+        text: 'The Last Supper', isCorrect: false,
         },
         {
-        text: 'Answer 2', isCorrect: false,
+        text: 'Marie Antoinette', isCorrect: false,
         },
         {
-        text: 'Answer 3', isCorrect: false,
+        text: 'Mona Lisa', isCorrect: true,
         },
         {
-        text: 'Answer 4', isCorrect: true,
+        text: 'Shakira', isCorrect: false,
         },
       ]
     },
-  ]
+    {
+        question: 'Who composed the ballets Sleeping Beauty and The Nutcracker?',
+        answers: [
+          {
+          text: 'Tchaikovsky', isCorrect: true,
+          },
+          {
+          text: 'Schubert', isCorrect: false,
+          },
+          {
+          text: 'Chopin', isCorrect: false,
+          },
+          {
+          text: 'Brahms', isCorrect: false,
+          },
+        ]
+      }
+    ];
 
   startBtn.addEventListener('click', () => {
     startBtnClick();
@@ -112,6 +129,8 @@ const questions = [
   })
 
 // Functions
+
+//Button functions
 const startBtnClick = () => {
     startBtn.classList.toggle('toggle');
     startText.classList.toggle('toggle');
@@ -119,8 +138,11 @@ const startBtnClick = () => {
     usernameInput.classList.toggle('toggle');
   }
 
+  //Username function
   const usernameInp = () => {
   }
+
+  //Next question function
   const nextBtnClicked = () => {
     if(document.querySelector('.clicked') != null) { 
       start = false; 
@@ -134,7 +156,7 @@ const startBtnClick = () => {
       else {
         alert("Unfortunately that's incorrect.");
       }
-      if (id < 4) { 
+      if (id < 5) { 
         iterate(id);
       }else {
         endQuiz();
@@ -156,6 +178,7 @@ const startBtnClick = () => {
       alert('Username is required'); 
     }
   }
+  //Function for saving username 
   const saveUsername = () => {
     username = usernameInput.value;
   }
@@ -179,17 +202,20 @@ const startBtnClick = () => {
     const ans2 = document.getElementById('answer2');
     const ans3 = document.getElementById('answer3');
     const ans4 = document.getElementById('answer4');
-
+  
+   
     ans1.innerHTML = questions[id].answers[0].text;
     ans2.innerHTML = questions[id].answers[1].text;
     ans3.innerHTML = questions[id].answers[2].text;
     ans4.innerHTML = questions[id].answers[3].text;
+   
 
     ans1.value = questions[id].answers[0].isCorrect;
     ans2.value = questions[id].answers[1].isCorrect;
     ans3.value = questions[id].answers[2].isCorrect;
     ans4.value = questions[id].answers[3].isCorrect;
-
+  
+   
     ans1.addEventListener("click", () => {
         selection(ans1);
     })
@@ -201,10 +227,19 @@ const startBtnClick = () => {
     ans3.addEventListener("click", () => {
       selection(ans3);
     })
-  
-
     ans4.addEventListener("click", () => {
       selection(ans4);
     })
   }
- 
+
+  // Ending Quiz function 
+
+  const endQuiz = () => {
+    questionAnswers.classList.toggle('toggle'); 
+    nextQuestion.classList.toggle('toggle'); 
+    resetBtn.classList.toggle('toggle'); 
+    endScreen.classList.toggle('toggle'); 
+    usernameScore.classList.toggle('toggle');
+    endUsername.innerHTML = username; 
+    endScore.innerHTML = score;
+  };
