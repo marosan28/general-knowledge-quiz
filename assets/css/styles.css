@@ -76,6 +76,25 @@ body {
 .next-btn {
    display:inline;
 }
+/* Question and answers */
+.question-answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
 
 /* Styling for different screen sizes */
 @media screen and (max-width: 500px) {
