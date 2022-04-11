@@ -94,4 +94,18 @@ const questions = [
   startBtn.addEventListener('click', () => {
     startBtnClick();
   })
-  
+  usernameInput.addEventListener('keyup', () => {
+    inputValue = usernameInput.value;
+  })  
+  nextUsername.addEventListener('click', () => {
+    startQuiz();
+  })
+  if (start) {
+    iterate(0);
+  }
+  nextQuestion.addEventListener("click", () => {
+    nextBtnClicked();
+  })
+  resetBtn.addEventListener('click', () => {
+    window.location.reload();
+  })
