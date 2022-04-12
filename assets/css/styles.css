@@ -70,7 +70,19 @@ body {
 .btn:hover {
     transform: scale(1.1);
 }
-
+.rules {
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.rules:hover {
+    text-decoration: underline;
+}
+.rules-text {
+    font-size: 2rem;
+    margin: 50px;
+}
 /* Control buttons */
 .start-btn {
     display: inline;
@@ -164,6 +176,9 @@ body {
     .btn:hover {
         height: 90px;
         width: 190px;
+    }
+    .rules-text {
+        font-size: 1.2rem;
     }
 }
 
