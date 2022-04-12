@@ -60,7 +60,7 @@ body {
     margin: 20px;
     background-color: #92DCE5;
     border-radius: 30px;
-    color: white;
+    border: 1px solid black;
     font-size: 2rem;
     cursor: pointer;
     display: none;
@@ -109,7 +109,9 @@ body {
     background-color: #92DCE5;
     border-radius: 30px;
     padding: 15px 30px;
+    border: 1px solid black;
     transition: ease-in-out 0.3s;
+
 
 }
 
