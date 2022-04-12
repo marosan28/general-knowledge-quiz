@@ -9,8 +9,8 @@ Website's main goal is entertaining the user and encouraging the user to play. T
 ## Main Features
 - __Front Page__
 
-  - The front page consists of a title and a button where the user can click if he wants to start the game.
-  - The button changes size when the user hovers over and the cursor changes to pointer, indicating it should be clicked.
+  - The front page consists of a title at the top.
+  ![App Screenshot](wireframes/images/title-quiz.png)
 
  ## First Time Visitor Goals
 -   ### User stories
@@ -27,9 +27,9 @@ Website's main goal is entertaining the user and encouraging the user to play. T
     -   #### Returning Visitor Goals
 
         1. As a Returning Visitor, I want to be able to play with different usernames.
-        2. As a Returning Visitor, I want to see my result bar while playing.
+        2. As a Returning Visitor, I want to see my result while playing.
         
 
     -   #### Frequent User Goals
         1. As a Frequent User, I want to have my username saved.
-        2. As a Frequent User, I want to find and compare my high-score
+        2. As a Frequent User, I want to be able to check the rules at any moment while playing. 
