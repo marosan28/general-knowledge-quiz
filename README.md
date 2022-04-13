@@ -12,7 +12,7 @@ Website's main goal is entertaining the user and encouraging the user to play. T
   - The front page consists of a title at the top that tells the user the name of the quiz.
   ![App Screenshot](wireframes/images/title-quiz.png)
 
-  - __Landing Page__
+- __Landing Page__
 
   - The landing page consists of a white box, a hyperlink to check the rules is apparent and the Start button.
     - The hyperlink underlines on the hover and the start button changes size, the mouse also changes to pointer, it's easy for user to know where to click for relevant information.
