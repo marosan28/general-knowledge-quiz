@@ -15,26 +15,30 @@ html {
 
 body {
     height: 100%;
+    width: 100%;
     background-image: linear-gradient(#FF66D8, #F7EC59);
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: inherit;
 }
-
+/* Navigation bar and Title */
+.nav-bar {
+    background-color: black;
+    
+}
 .title {
     color: #fff;
     letter-spacing: 2px;
     text-align: center;
-    margin: 20px;
     font-size: 3rem;
-    padding: 10px;
+    padding: 20px 0;
 }
 .question-container {
     background-color: white;
     border-radius: 50px;
     border: 2px solid rgba(110, 110, 110, 0.74);
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,6 +53,7 @@ body {
     border: 2px solid rgba(110, 110, 110, 0.74);
     border-radius: 20px;
     padding: 20px;
+    text-transform: capitalize;
     background-image: linear-gradient(#FF66D8, #F7EC59);
     max-width: 250px;
 }
@@ -74,7 +79,10 @@ body {
     font-size: 1.5rem;
     text-decoration: none;
     cursor: pointer;
+    text-transform:capitalize;
     color: black;
+    position: relative;
+    top: -20px;
 }
 .rules:hover {
     text-decoration: underline;
@@ -160,24 +168,28 @@ footer {
     bottom: 0;
     padding: 20px 0 20px 0;
     width: 100%;
-    color: black;
+    color: white;
     font-size: 1rem;
     letter-spacing: 5px;
-    background-color: rgba(247, 247, 247, 0.74);
+    background-color: black;
 }
 .footer {
     text-align: center;
 }
+.footer ul {
+    bottom: 0;
+    text-align: end;
+    padding: 20px 0;
+    width: 100%;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    position: relative;
+}
 /* Styling for different screen sizes */
 @media screen and (max-width: 500px) {
     .title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
-
-    .question-container {
-        margin: 20px auto;
-    }
-
     .btn {
         margin: 10px;
         width: 200px;
@@ -190,6 +202,9 @@ footer {
     .rules-text {
         font-size: 1.2rem;
     }
+    footer {
+        position: relative;
+    }
 }
 
 @media screen and (min-width: 650px) {
@@ -198,9 +213,8 @@ footer {
         margin-bottom: 10px;
         gap: 200px;
     }
-
     .question {
-        font-size: 50px;
+        font-size: 50px; 
     }
 
     .start-text {
@@ -234,14 +248,8 @@ footer {
     .title {
         font-size: 2.55rem;
     }
-
     .title:hover {
         font-size: 2.2rem;
-    }  
-}
-@media screen and (min-width: 630px) and (max-width:2500px) {
-    footer {
-        position: fixed;
     }
 }
 /* JS CLASSES */
