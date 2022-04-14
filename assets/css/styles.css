@@ -194,6 +194,15 @@ footer {
     letter-spacing: 5px;
     position: relative;
 }
+
+.back {
+    margin: 0 20px;
+    display: flex;
+    position: relative;
+    top: -30px;
+    text-decoration: none;
+    color: #fff;
+}
 /* Styling for different screen sizes */
 @media screen and (max-width: 500px) {
     .title {
