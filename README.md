@@ -9,7 +9,7 @@ Website's main goal is entertaining the user and encouraging the user to play. T
 ## Main Features
 - __Navigation__
 
-  - The front page consists of a navigation bar at the top where a user can see the name of the quiz and a logo, also there is a Rulebook on the left of the screen where a user can check the rules of the game.
+  - The front page consists of a navigation bar at the top where a user can see the name of the quiz and a logo and a Rulebook on the left of the screen where a user can check the rules of the game.
   ![App Screenshot](wireframes/images/title-quiz.png)
 
 - __Landing Page__
@@ -31,6 +31,22 @@ Website's main goal is entertaining the user and encouraging the user to play. T
     -The username and score are both in contrast colored boxes to make them stand out more, make the game more enjoyable and easier to follow.
     
 ![App Screenshot](wireframes/images/username-score.png)
+
+- __Question Box__
+
+  - Questions are presented in a clear way with a big (black-white) contrast, questions are more bold than the rest of the letters.
+  - Answers each have their own box, on each question there are 4 possible answers.
+  - There is a big next button where a user can continue on to the next question.
+    
+![App Screenshot](wireframes/images/question-box.png)
+
+- __Finished Game__
+
+  - At the end of the game the User can see the score achieved along with his username.
+  - There is a restart button if the User would want to start the game again.
+
+![App Screenshot](wireframes/images/finished-game.png)
+
  ## First Time Visitor Goals
 -   ### User stories
 
