@@ -25,6 +25,12 @@ Website's main goal is entertaining the user and encouraging the user to play. T
     
 ![App Screenshot](wireframes/images/footer-quiz.png)
 
+- __Username and Score__
+
+  - There is a username and score tracker on the top of the page.
+    -The username and score are both in contrast colored boxes to make them stand out more, make the game more enjoyable and easier to follow.
+    
+![App Screenshot](wireframes/images/username-score.png)
  ## First Time Visitor Goals
 -   ### User stories
 
