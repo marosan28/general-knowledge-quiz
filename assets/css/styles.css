@@ -36,7 +36,7 @@ body {
 .question-container {
     background-color: white;
     border-radius: 50px;
-    border: 2px solid rgba(110, 110, 110, 0.74);
+    border: 3px solid;
     width: 80%;
     margin: 20px auto;
     display: flex;
@@ -49,13 +49,13 @@ body {
 
 /* Start text */
 .start-text {
-    color: #fff;
-    border: 2px solid rgba(110, 110, 110, 0.74);
-    border-radius: 20px;
+    color: black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     padding: 20px;
     text-transform: capitalize;
     background-image: linear-gradient(#FF66D8, #F7EC59);
-    max-width: 250px;
+    width: -webkit-fill-available;
 }
 
 /* Button Styling */
@@ -65,7 +65,7 @@ body {
     margin: 20px;
     background-color: #92DCE5;
     border-radius: 30px;
-    border: 1px solid black;
+    border: 3px solid black;
     font-size: 2rem;
     cursor: pointer;
     display: none;
@@ -77,12 +77,12 @@ body {
 }
 .rules {
     font-size: 1.5rem;
-    text-decoration: none;
     cursor: pointer;
-    text-transform:capitalize;
-    color: black;
-    position: relative;
-    top: -20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 20px;
 }
 .rules:hover {
     text-decoration: underline;
@@ -129,7 +129,8 @@ body {
     background-color: #92DCE5;
     border-radius: 30px;
     padding: 15px 30px;
-    border: 1px solid black;
+    border: 3px solid black;
+    font-size: 1.7rem;
     transition: ease-in-out 0.3s;
 }
 
@@ -143,6 +144,7 @@ body {
 }
 
 /* Username and score */
+
 .username-score {
     display: flex;
     flex-direction: column;
@@ -152,7 +154,14 @@ body {
     color: white;
     font-size: 1.5rem;
 }
-
+.username, .score {
+    background-color: #92DCE5;
+    padding: 15px;
+    margin: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    color: black;
+}
 /* End screen */
 .end-screen {
     display: flex;
@@ -162,7 +171,7 @@ body {
     margin-top: 30px;
     margin-bottom: 35px;
     gap: 15px;
-}
+} 
 /* Footer */
 footer {
     bottom: 0;
