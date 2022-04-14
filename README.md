@@ -1,5 +1,6 @@
 # General-Knowledge-Quiz
 - This project was made as a part of a Full Stack Developer Programme by Code Institute. All information contained on the page is intended for course use only.
+[View the live project here.](https://marosan28.github.io/general-knowledge-quiz/)
 -----
 ## Who is this website for and what does it do? 
 
@@ -36,7 +37,7 @@ Website's main goal is entertaining the user and encouraging the user to play. T
 
   - Questions are presented in a clear way with a big (black-white) contrast, questions are more bold than the rest of the letters.
   - Answers each have their own box, on each question there are 4 possible answers.
-  - There is a big next button where a user can continue on to the next question.
+  - There is a next button at the bottom where a user can clicking continue on to the next question.
     
 ![App Screenshot](wireframes/images/question-box.png)
 
@@ -67,4 +68,4 @@ Website's main goal is entertaining the user and encouraging the user to play. T
 
     -   #### Frequent User Goals
         1. As a Frequent User, I want to have my username saved.
-        2. As a Frequent User, I want to be able to check the rules at any moment while playing. 
+        2. As a Frequent User, I want to be able to check the rules at any moment while playing.
