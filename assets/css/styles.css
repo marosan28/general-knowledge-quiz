@@ -123,8 +123,6 @@ body {
     padding: 15px 30px;
     border: 1px solid black;
     transition: ease-in-out 0.3s;
-
-
 }
 
 .answers-btn:hover {
@@ -160,17 +158,16 @@ body {
 /* Footer */
 footer {
     bottom: 0;
-    text-align: end;
     padding: 20px 0 20px 0;
     width: 100%;
     color: black;
     font-size: 1rem;
     letter-spacing: 5px;
-    position: fixed;
     background-color: rgba(247, 247, 247, 0.74);
-
 }
-
+.footer {
+    text-align: center;
+}
 /* Styling for different screen sizes */
 @media screen and (max-width: 500px) {
     .title {
@@ -178,7 +175,7 @@ footer {
     }
 
     .question-container {
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     .btn {
@@ -240,6 +237,11 @@ footer {
 
     .title:hover {
         font-size: 2.2rem;
+    }  
+}
+@media screen and (min-width: 630px) and (max-width:2500px) {
+    footer {
+        position: fixed;
     }
 }
 /* JS CLASSES */
