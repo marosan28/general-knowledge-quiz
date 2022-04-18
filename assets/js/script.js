@@ -196,22 +196,22 @@ const questions = [
 
   startBtn.addEventListener('click', () => {
     startBtnClick();
-  })
+  });
   usernameInput.addEventListener('keyup', () => {
     inputValue = usernameInput.value;
-  })  
+  });
   nextUsername.addEventListener('click', () => {
     startQuiz();
-  })
+  });
   if (start) {
     iterate(0);
   }
   nextQuestion.addEventListener("click", () => {
     nextBtnClicked();
-  })
+  });
   resetBtn.addEventListener('click', () => {
     window.location.reload();
-  })
+  });
 
 // Functions
 
@@ -221,11 +221,11 @@ const startBtnClick = () => {
     startText.classList.toggle('toggle');
     nextUsername.classList.toggle('toggle');
     usernameInput.classList.toggle('toggle');
-  }
+  };
 
   //Username function
   const usernameInp = () => {
-  }
+  };
 
   //Next question function
   const nextBtnClicked = () => {
@@ -236,7 +236,7 @@ const startBtnClick = () => {
       if(selected == true) { 
         score++; 
         scoreDisplay.innerHTML = score; 
-        alert("That's the correct answer, congrats!")
+        alert("That's the correct answer, congrats!");
       }
       else {
         alert("Unfortunately that's incorrect.");
@@ -247,10 +247,10 @@ const startBtnClick = () => {
         endQuiz();
       }
     }
-  }
+  };
   const startQuiz = () => {
     if(inputValue != undefined) { 
-      nextUsername.classList.toggle('toggle')
+      nextUsername.classList.toggle('toggle');
       nextQuestion.classList.toggle('toggle'); 
       saveUsername(); 
       usernameInput.classList.toggle('toggle');
@@ -262,11 +262,11 @@ const startBtnClick = () => {
     else{
       alert('Username is required'); 
     }
-  }
+  };
   //Function for saving username 
   const saveUsername = () => {
     username = usernameInput.value;
-  }
+  };
   const selection = (ans) => {
     selected = ans.value;
     if(document.querySelector('.clicked') == null){
@@ -276,7 +276,7 @@ const startBtnClick = () => {
       document.querySelector('.clicked').classList.remove('clicked'); 
       ans.classList.add('clicked');   
     }
-  }
+  };
   function iterate(id) {
 
     const question = document.getElementById("question");
@@ -303,18 +303,18 @@ const startBtnClick = () => {
    
     ans1.addEventListener("click", () => {
         selection(ans1);
-    })
+    });
 
     ans2.addEventListener("click", () => {
       selection(ans2);
-    })
+    });
   
     ans3.addEventListener("click", () => {
       selection(ans3);
-    })
+    });
     ans4.addEventListener("click", () => {
       selection(ans4);
-    })
+    });
   }
 
   // Ending Quiz function 
@@ -328,3 +328,4 @@ const startBtnClick = () => {
     endUsername.innerHTML = username; 
     endScore.innerHTML = score;
   };
+      

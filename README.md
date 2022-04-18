@@ -100,7 +100,7 @@ Website's main goal is entertaining the user and encouraging the user to play. T
 ### Frameworks, Libraries & Programs Used
 
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Itim' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts was used to import the 'Itim' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website for the logo headline and icons on the buttons.
 1. [JavaScript:](https://javascript.com/)
@@ -111,7 +111,13 @@ Website's main goal is entertaining the user and encouraging the user to play. T
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Miro:](https://balsamiq.com/)
     - Miro was used to create the wireframes during the design process.
+  ## Testing
 
+The JSHint, W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](wireframes/images/html-validator.png)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](wireframes/images/css-validator.png)
+-   [JSHint](https://jshint.com/)
 
 
 
