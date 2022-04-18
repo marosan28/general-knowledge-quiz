@@ -59,7 +59,7 @@ Website's main goal is entertaining the user and encouraging the user to play. T
 
         2. As a First Time Visitor, I want to be able to easily navigate throughout the website layout.
 
-        3. As a First Time Visitor, I want to be able to understand the questions and how to respond. 
+        3. As a First Time Visitor, I want to be able to understand the questions and how can I respond to them. 
 
     -   #### Returning Visitor Goals
 
@@ -123,11 +123,48 @@ The JSHint, W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were us
 -   Website was tested using [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
   ![App Screenshot](wireframes/images/lighthouse-performance.png)
+### Testing User Stories from User Experience (UX) Section
 
+-   #### First Time Visitor Goals
 
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site.
 
+        1. When entering the site the User can clearly see the title at the top of the page at the navigation bar.
+        2. There is a large start button with an icon at the centre of the page. 
+        3. Above the start button there is an instruction "Click to start the game", the User knows he can click on the button and will be redirected to start the game.
 
+    2. As a First Time Visitor, I want to be able to easily navigate throughout the website layout.
 
+        1. The site has been designed with a navigation bar at the top of the page which clearly states the name of the Quiz.
+        2. There is a Rulebook hyperlink in the left corner of the navigation bar which is underlined, when User hovers over the hyperlink it changes the mouse to pointer indicating it should be clicked.
+        3. There is a footer at the bottom of the page which states when was the website created.
+
+    3. As a First Time Visitor, I want to be able to understand the questions and how can I respond to them.
+
+        1. Every question is presented in a clear way at the middle of the page with bold text style, the answers are in a column presented below the question
+        2. Each question has it's own blue box, hovering over the question the box has a transition and changes the mouse to pointer, the User knows it's clickable.
+
+-   #### Returning Visitor Goals
+
+    1. As a Returning Visitor, I want to be able to play with different usernames.
+
+        1. After the user clicks on start he will be able to add the username he wants to play the game with.
+        2. The username resets after each game, the user can set up different usernames when starting the game from the beginning.
+
+    2. As a Returning Visitor, I want to see my result while playing.
+
+        1. Above the questions box there are two boxes in the middle of the screen, one is the Users selected username and the other one is the current score.
+        2. The score updates throught the game.
+
+-   #### Frequent User Goals
+
+    1. As a Frequent User, I want to have my username saved.
+
+        1. The username User used stays on the website and when starting a new game the user can select the same username again.
+     
+    2. As a Frequent User, I want to be able to check the rules at any moment while playing.
+
+        1. The rulebook is at the navigation bar and accessible to the User at all times during the game.
 
 
 
