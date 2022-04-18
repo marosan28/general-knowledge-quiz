@@ -176,7 +176,7 @@ The JSHint, W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were us
 ![App Screenshot](wireframes/images/mozzila-bug.png) 
 - The bug was fixed, added /*width: -moz-available;*/ to CSS code
 
-      ## Deployment
+## Deployment
 
 ### GitHub Pages
 
