@@ -217,5 +217,5 @@ Forking the GitHub Repository means we make a copy of the original repository on
 
 -   Slack student support.
 
--   [AcadeMind](https://www.youtube.com/c/Academind) for all the tutorials that helped me throughout the project.
+-   [Academind](https://www.youtube.com/c/Academind) for all the tutorials that helped me throughout the project.
 
