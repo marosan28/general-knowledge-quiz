@@ -168,13 +168,13 @@ The JSHint, W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were us
 ### Further Testing
 
 -   The Website was tested on Google Chrome, Opera and Mozzila Firefox.
-- The website was tested on Google Huawei P30 lite and Iphone 6s.
+- The website was tested on Google Pixel 4a, Huawei P30 lite and Iphone 6s.
 
 ### Bugs
 
--Current bug on Mozzila Firefox 
+-Bug on Mozzila Firefox 
 ![App Screenshot](wireframes/images/mozzila-bug.png) 
-- The bug was fixed, added /*width: -moz-available;*/ to CSS code
+- The bug was fixed, added /*width: -moz-available;*/ to CSS code.
 
 ## Deployment
 
