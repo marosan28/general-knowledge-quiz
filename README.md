@@ -117,7 +117,7 @@ The JSHint, W3C Markup Validator and W3C CSS (Jigsaw) Validator Services were us
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](wireframes/images/html-validator.png)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](wireframes/images/css-validator.png)
--   [JSHint](https://jshint.com/)
+-   [JSHint](https://jshint.com/)- [Results](wireframes/images/jshint.png)
 ### Acessibility
 - Google Lighthouse
 -   Website was tested using [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse)
