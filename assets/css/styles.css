@@ -205,6 +205,7 @@ footer {
     color: #fff;
 }
 /* Styling for different screen sizes */
+
 @media screen and (max-width: 500px) {
     .title {
         font-size: 2rem;
@@ -226,6 +227,9 @@ footer {
     }
     .rules {
         margin: 20px 0 0 20px;
+    }
+    .back {
+        margin:10px 5px;
     }
 }
 
