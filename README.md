@@ -207,3 +207,15 @@ Forking the GitHub Repository means we make a copy of the original repository on
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied.
 7. Press enter and the clone should be created.
+## Credits
+
+### Content
+
+- The questions for the quiz were found [here](https://thoughtcatalog.com/wp-content/uploads/2020/03/best-trivia-questions.pdf)
+
+### Acknowledgements
+
+-   Slack student support.
+
+-   [AcadeMind](https://www.youtube.com/c/Academind) for all the tutorials that helped me throughout the project.
+
