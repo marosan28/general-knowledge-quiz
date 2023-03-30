@@ -7,7 +7,7 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Calistoga', cursive;
 }
 
 html {
@@ -103,22 +103,30 @@ img {
 
   }
   
-.btn {
-    height: 100px;
-    width: 300px;
+  .btn {
+    height: 80px;
+    width: 250px;
     margin: 20px;
-    background-color: #FCC838;
-    border-radius: 30px;
-    border: 3px solid rgb(255, 255, 255);
-    cursor:pointer;
+    background-color: #FF6B6B;
+    border-radius: 50px;
+    border: none;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
     display: none;
     transition: ease-in-out 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-}
-
+  }
+  
+  .btn:hover {
+    background-color: rgb(94, 187, 18);
+    box-shadow: 0 0 10px rgb(66, 131, 14);
+  }
+  
+ 
+  
 .rules {
     font-size: 1.5rem;
     cursor: pointer;
@@ -141,15 +149,13 @@ img {
 
 .start-btn {
     display: inline;
-
     width: 100px;
-   
-  
+    line-height: 40px;
     border-radius: 30px;
-    border: 3px solid rgb(255, 255, 255);
- 
-
-}
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
 
 .next-btn {
     display: inline;
