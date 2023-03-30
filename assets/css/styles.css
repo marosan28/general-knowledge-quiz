@@ -29,7 +29,9 @@ body {
     background-color: black;
 
 }
-
+.navbar-dark {
+    margin: 0 100px;
+}
 
 .navbar-nav .nav-item .nav-link.active {
   background-color: #FCC838;
@@ -99,7 +101,7 @@ body {
 
 /* Apply the animation to the image */
 img {
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
     height: auto;
     animation-name: pulse;
@@ -254,28 +256,32 @@ img {
 }
 
 /* Footer */
-footer {
-    bottom: 0;
-    padding: 20px 0 20px 0;
-    width: 100%;
+.ft {
     color: white;
     font-size: 1rem;
-    letter-spacing: 5px;
-    background-color: black;
-}
-
-.footer {
+    font-weight: 400;
+    margin-top: 20px;
+    }
+    
+    .footer {
     text-align: center;
-}
-
-.footer ul {
-    bottom: 0;
+    overflow: hidden;
+    padding: 20px 0;
+    background-image: url('../../wireframes/images/footer-wave.png');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    }
+    
+    .footer ul {
     text-align: end;
     padding: 20px 0;
-    width: 100%;
     font-size: 1rem;
     letter-spacing: 5px;
-    position: relative;
+    }
+.foot-div {
+    padding:0;
 }
 
 .back {
