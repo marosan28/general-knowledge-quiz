@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto+Mono:wght@400;700&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
-    font-family: 'Itim', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 html {
@@ -16,7 +18,7 @@ html {
 body {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(#FF66D8, #F7EC59);
+    background-image: linear-gradient(#6b4060, #304c77);
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: inherit;
@@ -62,16 +64,53 @@ body {
     width: -moz-available;
 }
 
+/* Hero Image */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation to the image */
+img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
 /* Button Styling */
+.start-btn-text {
+    color: #000000;
+    font-weight: 900; 
+    text-shadow: 2px 2px 0px #cfcfcf;
+    text-transform: uppercase;
+    letter-spacing: 0.1cm;
+    font-size: 3rem;
+    font-family: 'Calistoga', cursive;
+
+  }
+  
 .btn {
-    height: 150px;
+    height: 100px;
     width: 300px;
     margin: 20px;
-    background-color: #92DCE5;
+    background-color: #FCC838;
     border-radius: 30px;
-    border: 3px solid black;
-    font-size: 2rem;
-    cursor: pointer;
+    border: 3px solid rgb(255, 255, 255);
+    cursor:pointer;
     display: none;
     transition: ease-in-out 0.3s;
 }
@@ -99,9 +138,17 @@ body {
     margin: 50px;
 }
 
-/* Control buttons */
+
 .start-btn {
     display: inline;
+
+    width: 100px;
+   
+  
+    border-radius: 30px;
+    border: 3px solid rgb(255, 255, 255);
+ 
+
 }
 
 .next-btn {
