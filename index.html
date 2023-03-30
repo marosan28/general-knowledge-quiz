@@ -24,10 +24,15 @@
         <h3 class="score">Score: <span id="scoreDisplay"></span></h3>
     </div>
     <!--Question container with buttons-->
-    <div class="question-container">
-
-        <h1 class="start-text title" id="startText">Click start to begin</h1>
+    <div>
+        <img src="wireframes/images/quiz-logo.png" alt="quiz logo">
+        <h1  id="startText">Click start to begin</h1>
         <input type="text" class="start-text title toggle" id="usernameInput" placeholder="Username">
+        <button class="start-btn btn" id="startBtn">Start <i class="fa-solid fa-play"></i></button>
+        <button class="next-btn btn toggle" id="nextUsername">Next <i class="fa-solid fa-forward-step"></i></button>
+    </div>
+
+    <div class="question-container toggle">
         <div class="question-answer toggle" id="questionAnswers">
             <h1 class="question" id="question">Question?</h1>
             <div class="answers">
@@ -52,8 +57,8 @@
         </div>
         <!--Control buttons-->
         <div class="controls">
-            <button class="start-btn btn" id="startBtn">Start <i class="fa-solid fa-play"></i></button>
-            <button class="next-btn btn toggle" id="nextUsername">Next <i class="fa-solid fa-forward-step"></i></button>
+            
+            
             <button class="next-btn btn toggle" id="nextQuestion">Next <i class="fa-solid fa-forward-step"></i></button>
             <button class="reset-btn btn toggle" id="resetBtn">Reset <i
                     class="fa-solid fa-arrow-rotate-left"></i></button>

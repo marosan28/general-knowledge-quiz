@@ -14,6 +14,8 @@ const usernameInput = document.getElementById('usernameInput');
 const usernameScore = document.getElementById('usernameScore');
 const questionAnswers = document.getElementById('questionAnswers');
 const endScreen = document.getElementById('endScreen');
+const questionContainer = document.querySelector(".question-container");
+const image = document.querySelector("img");
 // Misc
 let username;
 let score = 0;
@@ -201,8 +203,16 @@ const questions = [
     inputValue = usernameInput.value;
   });
   nextUsername.addEventListener('click', () => {
+    // hide the image
+    image.classList.add('toggle');
+    
+    // show the question container
+    questionContainer.classList.remove('toggle');
+    
+    // call the startQuiz function
     startQuiz();
-  });
+});
+
   if (start) {
     iterate(0);
   }
