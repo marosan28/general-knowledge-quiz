@@ -30,6 +30,24 @@ body {
 
 }
 
+
+.navbar-nav .nav-item .nav-link.active {
+  background-color: #FCC838;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: ease-in-out 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover:not(.active) {
+  background-color: #FCC838;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: ease-in-out 0.3s;
+}
+
+
+
+
 .title {
     color: #fff;
     letter-spacing: 2px;
