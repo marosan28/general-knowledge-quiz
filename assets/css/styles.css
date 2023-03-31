@@ -47,9 +47,6 @@ body {
     transition: ease-in-out 0.3s;
 }
 
-
-
-
 .title {
     color: #fff;
     letter-spacing: 2px;
@@ -61,7 +58,7 @@ body {
 .question-container {
     background-color: white;
     border-radius: 50px;
-    border: 3px solid;
+    border: 15px solid #FCC838;
     width: 80%;
     margin: 20px auto;
     display: flex;
@@ -174,7 +171,7 @@ img.logo{
 .rules-text {
     font-size: 2rem;
     margin: 50px;
-    padding: 120px;
+    padding: 0 120px 120px;
 }
 
 .img-fluid.position-absolute.top-0.start-0 {
@@ -206,7 +203,9 @@ img.logo{
       transform: rotate(0deg);
     }
   }
-  
+  .how-to-play {
+    font-size: 2.2rem;
+  }
 
 
 #startText {
