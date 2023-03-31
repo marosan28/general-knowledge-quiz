@@ -252,17 +252,25 @@ img.logo{
 }
 
 .answers-btn {
-    background-color: #92DCE5;
     border-radius: 30px;
     padding: 15px 30px;
-    border: 3px solid black;
     font-size: 1.7rem;
     transition: ease-in-out 0.3s;
+    background: linear-gradient(#6b4060, #304c77);
+    width: -webkit-fill-available;
+    color: white;
+    text-align: center;
 }
 
 .answers-btn:hover {
     transform: scale(1.1);
     cursor: pointer;
+    color: #FCC838;
+}
+.clicked {
+   background: #2e1b29;
+   color: #FCC838;
+   transform: scale(1.1);
 }
 
 .answers-btnText {
@@ -270,6 +278,12 @@ img.logo{
 }
 
 /* Username and score */
+.progress, .progress-stacked {
+    max-width: 1000px;
+    margin: 20px auto;
+    --bs-progress-bar-bg: #FCC838;
+
+}
 
 .username-score {
     display: flex;
@@ -283,12 +297,12 @@ img.logo{
 
 .username,
 .score {
-    background-color: #92DCE5;
-    padding: 15px;
+    background-color: #FCC838;
+    padding: 20px;
     margin: 20px;
-    border: 3px solid black;
-    border-radius: 20px;
-    color: black;
+    border-radius: 30px;
+    color: white;
+    max-width: fit-content;
 }
 
 /* End screen */
@@ -456,6 +470,3 @@ img.logo{
     display: none;
 }
 
-.clicked {
-    background-color: mediumaquamarine;
-}

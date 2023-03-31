@@ -22,6 +22,11 @@ let score = 0;
 let start = true;
 let id = 0;
 let inputValue;
+const progressBar = document.querySelector('.progress-bar');
+const progress = document.querySelector('.progress');
+const maxQuestions = 10;
+let questionNumber = 1;
+
 // Questions object
 const questions = [
     {
@@ -208,7 +213,7 @@ const questions = [
     
     // show the question container
     questionContainer.classList.remove('toggle');
-    
+    progress.classList.remove('toggle');
     // call the startQuiz function
     startQuiz();
 });
@@ -233,9 +238,17 @@ const startBtnClick = () => {
     usernameInput.classList.toggle('toggle');
   };
 
+
   //Username function
   const usernameInp = () => {
   };
+
+  //Progress Bar
+  const updateProgressBar = () => {
+    const progress = (questionNumber / maxQuestions) * 100;
+    progressBar.style.width = `${progress}%`;
+    progressBar.setAttribute('aria-valuenow', progress);
+  }
 
   //Next question function
   const nextBtnClicked = () => {
@@ -246,18 +259,18 @@ const startBtnClick = () => {
       if(selected == true) { 
         score++; 
         scoreDisplay.innerHTML = score; 
-        alert("That's the correct answer, congrats!");
-      }
-      else {
-        alert("Unfortunately that's incorrect.");
+        updateProgressBar();
       }
       if (id < 10) { 
         iterate(id);
-      }else {
+        questionNumber++;
+        updateProgressBar();
+      } else {
         endQuiz();
       }
     }
   };
+
   const startQuiz = () => {
     if(inputValue != undefined) { 
       nextUsername.classList.toggle('toggle');
