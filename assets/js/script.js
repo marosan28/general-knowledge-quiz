@@ -211,16 +211,22 @@ const questions = [
     inputValue = usernameInput.value;
   });
   nextUsername.addEventListener('click', () => {
+    inputValue = usernameInput.value;
+    if (inputValue !== '') {
     // hide the image
-    image.classList.add('toggle');
+      image.classList.add('toggle');
     
     // show the question container
-    questionContainer.classList.remove('toggle');
-    progress.classList.remove('toggle');
-    progressRow.classList.remove('toggle');
-    quitBtn.classList.remove('toggle');
+      questionContainer.classList.remove('toggle');
+      progress.classList.remove('toggle');
+      progressRow.classList.remove('toggle');
+      quitBtn.classList.remove('toggle');
     // call the startQuiz function
-    startQuiz();
+      startQuiz();
+    }
+    else {
+      alert('Username is required');
+      }
 });
 
   if (start) {
@@ -280,18 +286,17 @@ const startBtnClick = () => {
   };
 
   const startQuiz = () => {
-    if(inputValue != undefined) { 
+    if (inputValue != undefined) {
       nextUsername.classList.toggle('toggle');
-      nextQuestion.classList.toggle('toggle'); 
-      saveUsername(); 
+      nextQuestion.classList.toggle('toggle');
+      saveUsername();
       usernameInput.classList.toggle('toggle');
-      usernameScore.classList.toggle('toggle'); 
-      usernameDisplay.innerHTML = username; 
-      scoreDisplay.innerHTML = score; 
-      questionAnswers.classList.toggle('toggle'); 
-    } 
-    else{
-      alert('Username is required'); 
+      usernameScore.classList.toggle('toggle');
+      usernameDisplay.innerHTML = username;
+      scoreDisplay.innerHTML = score;
+      questionAnswers.classList.toggle('toggle');
+    } else {
+      alert('Username is required');
     }
   };
   //Function for saving username 
