@@ -284,6 +284,13 @@ img.logo{
     --bs-progress-bar-bg: #FCC838;
 
 }
+.progress-title {
+    color: white;  
+}
+.row.progress-row {
+    justify-content: center;
+}
+
 
 .username-score {
     display: flex;

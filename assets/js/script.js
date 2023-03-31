@@ -24,6 +24,7 @@ let id = 0;
 let inputValue;
 const progressBar = document.querySelector('.progress-bar');
 const progress = document.querySelector('.progress');
+const progressRow = document.querySelector('.progress-row');
 const maxQuestions = 10;
 let questionNumber = 1;
 
@@ -214,6 +215,7 @@ const questions = [
     // show the question container
     questionContainer.classList.remove('toggle');
     progress.classList.remove('toggle');
+    progressRow.classList.remove('toggle');
     // call the startQuiz function
     startQuiz();
 });
