@@ -109,7 +109,7 @@ body {
 }
 
 /* Apply the animation to the image */
-img {
+img.logo{
     max-width: 700px;
     width: 100%;
     height: auto;
@@ -155,6 +155,8 @@ img {
     box-shadow: 0 0 10px rgb(66, 131, 14);
 }
 
+
+
 .rules {
     font-size: 1.5rem;
     cursor: pointer;
@@ -172,7 +174,40 @@ img {
 .rules-text {
     font-size: 2rem;
     margin: 50px;
+    padding: 120px;
 }
+
+.img-fluid.position-absolute.top-0.start-0 {
+    top: -260px;
+}
+.image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: -20px;
+    left: 0;
+  }
+  
+  .owl-image {
+    animation: wiggle 1s ease-in-out infinite;
+    max-height: 450px;
+  }
+  
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+
 
 #startText {
     color: white;
@@ -320,7 +355,7 @@ img {
 /* Styling for different screen sizes */
 
 @media screen and (max-width: 500px) {
-    img {
+    img.logo {
         max-width: 300px;
     }
 
@@ -410,7 +445,7 @@ img {
         font-size: 2.2rem;
     }
 
-    img {
+    img.logo {
         max-width: 200px;
     }
     
