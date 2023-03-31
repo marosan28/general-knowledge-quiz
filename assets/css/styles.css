@@ -1,5 +1,4 @@
-
- @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto+Mono:wght@400;700&display=swap');
 
 
 * {
@@ -29,22 +28,23 @@ body {
     background-color: black;
 
 }
+
 .navbar-dark {
     margin: 0 100px;
 }
 
 .navbar-nav .nav-item .nav-link.active {
-  background-color: #FCC838;
-  border-radius: 30px;
-  padding: 10px 20px;
-  transition: ease-in-out 0.3s;
+    background-color: #FCC838;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: ease-in-out 0.3s;
 }
 
 .navbar-nav .nav-item .nav-link:hover:not(.active) {
-  background-color: #FCC838;
-  border-radius: 30px;
-  padding: 10px 20px;
-  transition: ease-in-out 0.3s;
+    background-color: #FCC838;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: ease-in-out 0.3s;
 }
 
 
@@ -84,14 +84,14 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
-  
-  .start-text:focus {
+}
+
+.start-text:focus {
     outline: none;
     border-color: #4d4d4d;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  }
-  
+}
+
 
 /* Hero Image */
 @keyframes pulse {
@@ -124,16 +124,16 @@ img {
 /* Button Styling */
 .start-btn-text {
     color: #000000;
-    font-weight: 900; 
+    font-weight: 900;
     text-shadow: 2px 2px 0px #cfcfcf;
     text-transform: uppercase;
     letter-spacing: 0.1cm;
     font-size: 3rem;
     font-family: 'Calistoga', cursive;
 
-  }
-  
-  .btn {
+}
+
+.btn {
     height: 80px;
     width: 250px;
     margin: 20px;
@@ -148,13 +148,13 @@ img {
     cursor: pointer;
     display: none;
     transition: ease-in-out 0.3s;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: rgb(94, 187, 18);
     box-shadow: 0 0 10px rgb(66, 131, 14);
-  }
-  
+}
+
 .rules {
     font-size: 1.5rem;
     cursor: pointer;
@@ -173,6 +173,7 @@ img {
     font-size: 2rem;
     margin: 50px;
 }
+
 #startText {
     color: white;
 }
@@ -184,8 +185,8 @@ img {
     border-radius: 30px;
     border: 3px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
+}
+
 
 .next-btn {
     display: inline;
@@ -273,39 +274,39 @@ img {
     font-size: 1rem;
     font-weight: 400;
     margin-top: 20px;
-  }
-  
-  .footer {
+}
+
+.footer {
     text-align: center;
     overflow: hidden;
     padding: 20px 0;
     background-image: url('../../wireframes/images/footer-wave.png');
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
+    min-height: 820px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-  }
-  
-  .footer ul {
+}
+
+.footer ul {
     margin: 0;
     padding: 0;
-  }
-  
-  .footer ul li {
+}
+
+.footer ul li {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
-  }
-  
-  .foot-div {
+}
+
+.foot-div {
     padding: 0;
-  }
-  
+}
+
 
 .back {
     margin: 0 20px;
@@ -322,16 +323,18 @@ img {
     img {
         max-width: 300px;
     }
+
     .navbar-dark {
         margin: 0 20px;
     }
+
     .title {
         font-size: 2rem;
     }
 
     button.start-btn {
         width: 70px;
-      }
+    }
 
     .btn {
         margin: 10px;
@@ -406,9 +409,11 @@ img {
     .title:hover {
         font-size: 2.2rem;
     }
+
     img {
-        max-width: 400px;
+        max-width: 200px;
     }
+    
 }
 
 
