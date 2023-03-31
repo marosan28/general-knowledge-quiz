@@ -225,7 +225,7 @@ const questions = [
       startQuiz();
     }
     else {
-      alert('Username is required');
+      $('#myModal').modal('show'); 
       }
 });
 
@@ -286,19 +286,21 @@ const startBtnClick = () => {
   };
 
   const startQuiz = () => {
-    if (inputValue != undefined) {
+    if(inputValue !== undefined) { 
       nextUsername.classList.toggle('toggle');
-      nextQuestion.classList.toggle('toggle');
-      saveUsername();
+      nextQuestion.classList.toggle('toggle'); 
+      saveUsername(); 
       usernameInput.classList.toggle('toggle');
-      usernameScore.classList.toggle('toggle');
-      usernameDisplay.innerHTML = username;
-      scoreDisplay.innerHTML = score;
-      questionAnswers.classList.toggle('toggle');
-    } else {
-      alert('Username is required');
+      usernameScore.classList.toggle('toggle'); 
+      usernameDisplay.innerHTML = username; 
+      scoreDisplay.innerHTML = score; 
+      questionAnswers.classList.toggle('toggle'); 
+    } 
+    else{
+      $('#myModal').modal('show'); 
     }
   };
+  
   //Function for saving username 
   const saveUsername = () => {
     username = usernameInput.value;
