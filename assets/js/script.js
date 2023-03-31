@@ -357,7 +357,16 @@ const startBtnClick = () => {
 
   // Ending Quiz function 
 
+
   const endQuiz = () => {
+    if (score <= 4) {
+      endMessage.innerHTML = "You can do better bestie";
+    } else if (score <= 7) {
+      endMessage.innerHTML = "Almost slayed";
+    } else {
+      endMessage.innerHTML = "Slayed";
+    }
+    
     questionAnswers.classList.toggle('toggle'); 
     nextQuestion.classList.toggle('toggle'); 
     resetBtn.classList.toggle('toggle'); 
@@ -366,4 +375,6 @@ const startBtnClick = () => {
     endUsername.innerHTML = username; 
     endScore.innerHTML = score;
   };
+  
+  
       
