@@ -3,6 +3,8 @@ const startBtn = document.getElementById('startBtn');
 const nextUsername = document.getElementById('nextUsername');
 const nextQuestion = document.getElementById('nextQuestion');
 const resetBtn = document.getElementById('resetBtn');
+const quitBtn = document.getElementById('quitBtn');
+
 // Text elements
 const startText = document.getElementById('startText');
 const usernameDisplay = document.getElementById('usernameDisplay');
@@ -216,6 +218,7 @@ const questions = [
     questionContainer.classList.remove('toggle');
     progress.classList.remove('toggle');
     progressRow.classList.remove('toggle');
+    quitBtn.classList.remove('toggle');
     // call the startQuiz function
     startQuiz();
 });
@@ -229,7 +232,10 @@ const questions = [
   resetBtn.addEventListener('click', () => {
     window.location.reload();
   });
+  quitBtn.addEventListener('click', () => {
+    window.location.reload();
 
+  });
 // Functions
 
 //Button functions

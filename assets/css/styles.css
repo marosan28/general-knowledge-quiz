@@ -226,7 +226,7 @@ img.logo{
     display: inline;
 }
 
-.reset-btn {
+.reset-btn, .quit-btn {
     display: inline;
 }
 
