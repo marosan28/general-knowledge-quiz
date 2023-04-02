@@ -106,7 +106,7 @@ body {
 }
 
 /* Apply the animation to the image */
-img.logo{
+img.logo {
     max-width: 700px;
     width: 100%;
     height: auto;
@@ -177,35 +177,39 @@ img.logo{
 .img-fluid.position-absolute.top-0.start-0 {
     top: -260px;
 }
+
 .image-container {
     position: relative;
-  }
-  
-  .image-container img {
+}
+
+.image-container img {
     position: absolute;
     top: -20px;
     left: 0;
-  }
-  
-  .owl-image {
+}
+
+.owl-image {
     animation: wiggle 1s ease-in-out infinite;
     max-height: 450px;
-  }
-  
-  @keyframes wiggle {
+}
+
+@keyframes wiggle {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     50% {
-      transform: rotate(10deg);
+        transform: rotate(10deg);
     }
+
     100% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  }
-  .how-to-play {
+}
+
+.how-to-play {
     font-size: 2.2rem;
-  }
+}
 
 
 #startText {
@@ -226,7 +230,8 @@ img.logo{
     display: inline;
 }
 
-.reset-btn, .quit-btn {
+.reset-btn,
+.quit-btn {
     display: inline;
 }
 
@@ -267,10 +272,11 @@ img.logo{
     cursor: pointer;
     color: #FCC838;
 }
+
 .clicked {
-   background: #2e1b29;
-   color: #FCC838;
-   transform: scale(1.1);
+    background: #2e1b29;
+    color: #FCC838;
+    transform: scale(1.1);
 }
 
 .answers-btnText {
@@ -278,15 +284,18 @@ img.logo{
 }
 
 /* Username and score */
-.progress, .progress-stacked {
+.progress,
+.progress-stacked {
     max-width: 1000px;
     margin: 20px auto;
     --bs-progress-bar-bg: #FCC838;
 
 }
+
 .progress-title {
-    color: white;  
+    color: white;
 }
+
 .row.progress-row {
     justify-content: center;
 }
@@ -376,33 +385,63 @@ img.logo{
 
 @media screen and (max-width: 500px) {
     img.logo {
-        max-width: 300px;
+        max-width: 200px;
+        padding: 10px;
     }
 
     .navbar-dark {
-        margin: 0 20px;
+        margin: 0 auto;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 1.2rem;
+        margin-top: 40px;
+        padding: 0;
     }
 
     button.start-btn {
-        width: 70px;
+        width: 80px;
+        height: 65px;
     }
 
     .btn {
         margin: 10px;
-        width: 200px;
+        width: 120px;
+        font-size: 20px;
     }
 
     .btn:hover {
         height: 90px;
-        width: 190px;
+        width: 120px
     }
 
     .rules-text {
         font-size: 1.2rem;
+        margin: 20px;
+        padding: 0;
+    }
+
+    .username,
+    .score {
+        padding: 15px;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .question {
+        font-size: 20px;
+    }
+    .answers-btn {
+        padding: 10px 25px;
+        font-size: 1.2rem;
+    }
+
+    .row.progress-row {
+        margin: 0 auto;
     }
 
     footer {
@@ -416,6 +455,33 @@ img.logo{
     .back {
         margin: 10px 5px;
     }
+
+    .footer {
+        min-height: 450px;
+        padding: 0;
+    }
+
+    .footer ul li {
+        height: 10px;
+        font-size: 10px;
+    }
+    .controls {
+        display: flex;
+        flex-direction: column;
+    }
+    .question-container {
+        padding: 40px 10px;
+    }
+    .owl-image {
+        max-height: 200px;
+    }
+    .img-fluid.position-absolute.top-0.start-0 {
+        top: -109px;
+    }
+    .how-to-play {
+        font-size: 1.2rem;
+    }
+    
 }
 
 @media screen and (min-width: 650px) {
@@ -466,9 +532,23 @@ img.logo{
     }
 
     img.logo {
-        max-width: 200px;
+        max-width: 300px;
     }
-    
+
+    .navbar-dark {
+        margin: 0 20px;
+    }
+
+    .footer {
+        min-height: 450px;
+        padding: 0;
+    }
+
+    .footer ul li {
+        height: 20px;
+        font-size: 15px;
+    }
+
 }
 
 
@@ -476,4 +556,3 @@ img.logo{
 .toggle {
     display: none;
 }
-
