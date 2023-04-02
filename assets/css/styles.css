@@ -539,11 +539,6 @@ img.logo {
         margin: 0 20px;
     }
 
-    .footer {
-        min-height: 450px;
-        padding: 0;
-    }
-
     .footer ul li {
         height: 20px;
         font-size: 15px;
@@ -551,7 +546,17 @@ img.logo {
 
 }
 
-
+@media screen and (max-width: 600px) {
+    .footer {
+        min-height: 450px;
+        padding: 0;
+    }
+}
+@media  screen and (min-width: 600px) and (max-width:800px) {
+    .footer {
+        min-height: 588px;
+    }
+}
 /* JS CLASSES */
 .toggle {
     display: none;
