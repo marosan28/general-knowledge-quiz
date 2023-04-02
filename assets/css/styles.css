@@ -557,6 +557,11 @@ img.logo {
         min-height: 588px;
     }
 }
+@media  screen and (min-width: 800px) and (max-width:900px) {
+    .footer {
+        min-height: 845px;
+    }
+}
 /* JS CLASSES */
 .toggle {
     display: none;
