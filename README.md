@@ -7,7 +7,7 @@
 - General Knowledge Quiz is an interactive website made for anyone who wants to have fun and test their knowledge. 
 Website's main goal is entertaining the user and encouraging the user to play. The website is targeted towards everyone above 10 years of age. General Knowledge Quiz offers the User a fun way to learn and/or improve their knowledge.
 -----
-![App Screenshot](wireframes/images/responsive.jpg)
+![App Screenshot](wireframes/images/responsive.png)
 ## Main Features
 - __Navigation__
 

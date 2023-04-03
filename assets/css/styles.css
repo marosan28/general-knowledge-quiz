@@ -6,7 +6,7 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
-    font-family: 'Calistoga', cursive;
+    font-family: 'Calistoga', cursive, 'Open Sans', sans-serif;;
 }
 
 html {
@@ -126,7 +126,7 @@ img.logo {
     text-transform: uppercase;
     letter-spacing: 0.1cm;
     font-size: 3rem;
-    font-family: 'Calistoga', cursive;
+    font-family: 'Calistoga', cursive, 'Open Sans', sans-serif;;
 
 }
 
