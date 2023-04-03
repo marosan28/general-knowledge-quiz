@@ -370,7 +370,13 @@ img.logo {
     justify-content: center;
     height: 50px;
 }
-
+.credits {
+    font-size: 15px;
+}
+.credits a {
+    color: white;
+    text-decoration: none;
+}
 .foot-div {
     padding: 0;
 }
@@ -469,6 +475,9 @@ img.logo {
         height: 10px;
         font-size: 10px;
     }
+    .credits {
+        font-size: 7px;
+    }
     .controls {
         display: flex;
         flex-direction: column;
@@ -547,12 +556,15 @@ img.logo {
         height: 20px;
         font-size: 15px;
     }
+    .credits {
+        font-size: 10px;
+    }
 
 }
 
 @media screen and (max-width: 600px) {
     .footer {
-        min-height: 450px;
+        min-height: 465px;
         padding: 0;
     }
 }

@@ -11,15 +11,15 @@ Website's main goal is entertaining the user and encouraging the user to play. T
 ## Main Features
 - __Navigation__
 
-  - The front page consists of a navigation bar at the top where a user can see the name of the quiz and a logo and a Rulebook on the left of the screen where a user can check the rules of the game.
-  ![App Screenshot](wireframes/images/title-quiz.png)
+  - The front page consists of a navigation bar at the top where a user can see the name of the quiz and a logo and a Rulebook on the right side of the navbar where a user can check the rules of the game.
+  ![App Screenshot](wireframes/images/navbar.PNG)
 
 - __Landing Page__
 
-  - The landing page consists of a main white box where all the content is and the start button.
-    - There is a text line "Click Start To Begin" which tells the user to click on the button to start the game.
+  - The landing page consists of a main animated hero image and a button to start the game.
+    - There is a text line "Play now!" which calls the user to click on the button to start the game.
 
-![App Screenshot](wireframes/images/front-page.png)
+![App Screenshot](wireframes/images/main.png)
 
 - __Footer__
 
