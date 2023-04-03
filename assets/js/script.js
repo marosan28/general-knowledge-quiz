@@ -4,6 +4,7 @@ const nextUsername = document.getElementById('nextUsername');
 const nextQuestion = document.getElementById('nextQuestion');
 const resetBtn = document.getElementById('resetBtn');
 const quitBtn = document.getElementById('quitBtn');
+var btns = document.querySelectorAll('.btn');
 
 // Text elements
 const startText = document.getElementById('startText');
@@ -29,6 +30,12 @@ const progress = document.querySelector('.progress');
 const progressRow = document.querySelector('.progress-row');
 const maxQuestions = 10;
 let questionNumber = 1;
+
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].classList.remove('clicked');
+}
+
 
 // Questions object
 const questions = [

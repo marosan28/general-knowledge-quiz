@@ -152,6 +152,10 @@ img.logo {
     box-shadow: 0 0 10px rgb(66, 131, 14);
 }
 
+.quit-btn:hover {
+    background-color: rgb(187, 24, 18);
+    box-shadow: 0 0 10px rgb(131, 14, 14);
+}
 
 
 .rules {
